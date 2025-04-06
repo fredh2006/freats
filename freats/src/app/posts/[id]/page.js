@@ -1,6 +1,7 @@
 import { MongoClient, ObjectId } from "mongodb";
 import Navbar from "../../../components/Navbar";
 import { Quicksand, Noto_Serif } from "next/font/google";
+require('dotenv').config()
 
 const quicksand = Quicksand({
   subsets: ['latin']
@@ -10,7 +11,7 @@ const noto_serif = Noto_Serif({
   subsets: ['latin']
 })
 
-const URI = "mongodb+srv://fredhe56:ieatdogs69420@freats.tjuajhz.mongodb.net/"
+const URI = process.env.DB_LINK
 const options = []
 
 let client = new MongoClient(URI, options)
@@ -37,30 +38,9 @@ async function getPost(id) {
   }
 }
 
-export async function generateMetadata({ params }) {
-  const id = await params.id;
-  return {
-    title: 'Post',
-  }
-}
-
-export const dynamicParams = true
-
 export default async function Post({ params }) {
-  const id = await params.id;
-  
-  if (!id) {
-    return (
-      <div className="min-h-screen bg-white">
-        <Navbar />
-        <div className="container mx-auto px-4 py-8">
-          <h1 className={`${noto_serif.className} text-2xl font-bold`}>Invalid post ID</h1>
-        </div>
-      </div>
-    );
-  }
-
-  const post = await getPost(id);
+  const { id } = await params
+  const post = await getPost({id});
 
   if (!post) {
     return (
@@ -106,7 +86,7 @@ export default async function Post({ params }) {
           {paragraphs.map((paragraph, index) => (
             <div key={index}>
               {imageArray[index] && imageArray[index] !== 'none' && (
-                <div className="mb-8">
+                <div className="mb-4">
                   <img
                     src={imageArray[index]}
                     alt={`${post.title} - Image ${index + 1}`}
@@ -114,7 +94,7 @@ export default async function Post({ params }) {
                   />
                 </div>
               )}
-              <p className="text-gray-800 text-lg leading-relaxed">
+              <p className="text-gray-800 text-md md:text-lg leading-relaxed">
                 {paragraph}
               </p>
             </div>

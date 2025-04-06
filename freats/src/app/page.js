@@ -37,11 +37,11 @@ export default function Home() {
               <Button />
             </div>
           </div>
-          <Link href="posts" className="shadow-sm min-h-[180px] sm:min-h-[300px] md:min-h-[400px] lg:min-h-[500px] bg-[url(/uoft.png)] bg-cover relative overflow-hidden bg-center">
+          <Link href="posts/6701ba7dc021bc454142a088" className="shadow-sm min-h-[180px] sm:min-h-[300px] md:min-h-[400px] lg:min-h-[500px] bg-[url(/uoft.png)] bg-cover relative overflow-hidden bg-center">
             <div href="/posts" className={`${noto_serif.className} text-sm sm:text-lg md:text-xl lg:text-2xl w-full sm:w-3/4 font-bold p-1.5 sm:p-3 absolute bottom-0 left-0 bg-white`}>Dishes that Remind me of Home</div>
           </Link>
-          <Link href="/posts" className="shadow-sm min-h-[180px] sm:min-h-[300px] md:min-h-[400px] lg:min-h-[500px] bg-[url(/japan.png)] bg-cover relative overflow-hidden bg-center">
-            <div href="/posts" className={`${noto_serif.className} text-sm sm:text-lg md:text-xl lg:text-2xl w-full sm:w-3/4 font-bold p-1.5 sm:p-3 absolute bottom-0 left-0 bg-white`}>Review: Japan</div>
+          <Link href="/posts/66ad7fe0de845afb0cef7f9a" className="shadow-sm min-h-[180px] sm:min-h-[300px] md:min-h-[400px] lg:min-h-[500px] bg-[url(/japan.png)] bg-cover relative overflow-hidden bg-center">
+            <div className={`${noto_serif.className} text-sm sm:text-lg md:text-xl lg:text-2xl w-full sm:w-3/4 font-bold p-1.5 sm:p-3 absolute bottom-0 left-0 bg-white`}>Review: Japan</div>
           </Link>
         </div>
       </div>

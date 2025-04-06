@@ -2,6 +2,7 @@ import { MongoClient } from "mongodb";
 import Navbar from "../../components/Navbar";
 import { Quicksand, Noto_Serif } from "next/font/google";
 import Link from "next/link";
+require('dotenv').config()
 
 const quicksand = Quicksand({
   subsets: ['latin']
@@ -11,7 +12,7 @@ const noto_serif = Noto_Serif({
   subsets: ['latin']
 })
 
-const URI = "mongodb+srv://fredhe56:ieatdogs69420@freats.tjuajhz.mongodb.net/"
+const URI = process.env.DB_LINK
 const options = []
 
 let client = new MongoClient(URI, options)
