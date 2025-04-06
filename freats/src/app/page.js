@@ -27,7 +27,7 @@ export default function Home() {
                 Welcome to FREATS! 👋
               </div>
               <div className={`${quicksand.className} text-md sm:text-base lg:text-lg leading-relaxed text-gray-700`}>
-                Hi, I'm Fred, a first year university student who loves all things food. FREATS is a space where I post reviews, articles, and really, anything I want. 🤤
+                Hi, I&apos;m Fred, a first year university student who loves all things food. FREATS is a space where I post reviews, articles, and really, anything I want. 🤤
               </div>
               <div className={`${quicksand.className} text-md sm:text-base lg:text-lg leading-relaxed text-gray-700`}>
                 Join me in this culinary adventure as I explore different cuisines, share cooking experiences, and discover the best food spots around Toronto!

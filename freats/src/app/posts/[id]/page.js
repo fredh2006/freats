@@ -38,10 +38,14 @@ async function getPost(id) {
   }
 }
 
+function replaceApostrophes(text) {
+  return text ? text.replace(/'/g, "&apos;") : text;
+}
+
 export default async function Post({ params }) {
   const { id } = await params
   const post = await getPost({id});
-
+  
   if (!post) {
     return (
       <div className="min-h-screen bg-white">
@@ -52,11 +56,10 @@ export default async function Post({ params }) {
       </div>
     );
   }
-
-
+  
   const paragraphs = post.content.split('\n').filter(p => p.trim());
   const imageArray = post.images ? post.images.split(',').map(img => img.trim()) : [];
-
+  
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
@@ -70,18 +73,18 @@ export default async function Post({ params }) {
             })} • {post.time}-minute read
           </div>
           <h1 className={`${noto_serif.className} text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4`}>
-            {post.title}
+            {replaceApostrophes(post.title)}
           </h1>
         </header>
-
+        
         <div className="mb-8">
           <img
             src={post.prevImage}
-            alt={post.title}
+            alt={replaceApostrophes(post.title)}
             className="w-full rounded-lg shadow-lg"
           />
         </div>
-
+        
         <div className={`${quicksand.className} space-y-8`}>
           {paragraphs.map((paragraph, index) => (
             <div key={index}>
@@ -89,13 +92,13 @@ export default async function Post({ params }) {
                 <div className="mb-4">
                   <img
                     src={imageArray[index]}
-                    alt={`${post.title} - Image ${index + 1}`}
+                    alt={`${replaceApostrophes(post.title)} - Image ${index + 1}`}
                     className="w-full rounded-lg shadow-lg"
                   />
                 </div>
               )}
               <p className="text-gray-800 text-md md:text-lg leading-relaxed">
-                {paragraph}
+                {replaceApostrophes(paragraph)}
               </p>
             </div>
           ))}

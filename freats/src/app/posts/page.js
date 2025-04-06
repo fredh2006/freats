@@ -42,9 +42,13 @@ async function getPosts() {
   }
 }
 
+function replaceApostrophes(text) {
+  return text ? text.replace(/'/g, "&apos;") : text;
+}
+
 export default async function Posts() {
   const posts = await getPosts();
-
+  
   return (
     <div className="bg-white min-h-screen">
       <Navbar />
@@ -57,9 +61,9 @@ export default async function Posts() {
           {posts.map((post) => (
             <Link href={`/posts/${post._id}`} key={post._id} className="group">
               <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-                <img 
-                  src={post.prevImage} 
-                  alt={post.title}
+                <img
+                  src={post.prevImage}
+                  alt={replaceApostrophes(post.title)}
                   className="w-full h-[200px] sm:h-[250px] object-cover rounded-t-lg"
                 />
                 <div className="p-4 space-y-2">
@@ -71,10 +75,10 @@ export default async function Posts() {
                     })} • {post.time}-minute read
                   </div>
                   <h2 className={`${noto_serif.className} text-lg sm:text-2xl font-bold text-gray-800 group-hover:text-[#457FFE] transition-colors duration-300`}>
-                    {post.title}
+                    {replaceApostrophes(post.title)}
                   </h2>
                   <p className={`${quicksand.className} text-sm sm:text-base text-gray-700 line-clamp-3`}>
-                    {post.firstPara}
+                    {replaceApostrophes(post.firstPara)}
                   </p>
                 </div>
               </div>
