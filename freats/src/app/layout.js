@@ -16,6 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className = {`${oswald.variable}`}>
+      <link rel="icon" href="/logo.png" />
       <body>{children}</body>
     </html>
   );
