@@ -4,7 +4,7 @@ Visit the live blog: **[freats.ca](https://freats.ca)**
 
 ## Overview
 
-`freats` is a full-stack web application built to serve as a personal food blog. It allows for posting articles, [mention other key features like comments, user accounts, categories, search, etc.]. The frontend is built with Next.js for server-side rendering/static site generation, and it connects to a backend API (using Express.js and/or Next.js API routes) powered by a MongoDB database.
+freats is a full-stack web application that serves as my personal food blog, check it out if you have time!
 
 ## Tech Stack
 Next.js, Express.js, MongoDB, TailwindCSS.
