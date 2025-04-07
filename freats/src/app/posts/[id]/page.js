@@ -39,7 +39,7 @@ async function getPost(id) {
 }
 
 function replaceApostrophes(text) {
-  return text ? text.replace(/'/g, "&apos;") : text;
+  return text ? text.replace(/ ' /g, "&apos;") : text;
 }
 
 export default async function Post({ params }) {
