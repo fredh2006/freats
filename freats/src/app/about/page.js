@@ -31,7 +31,7 @@ export default function About() {
                             <ul className="list-disc list-inside space-y-2 text-gray-700">
                                 <li>I hate tomatoes, but love everything made from them.</li>
                                 <li>I was born in Shanghai, China, and am in love with the cuisine.</li>
-                                <li>I&apos;ve been to over 15 countries, my most recent visit was Korea and Japan.</li>
+                                <li>I&apos;ve been to over 15 countries; my most recent visit was Korea and Japan.</li>
                                 <li>I&apos;m an amateur chef, but am trying to learn so my cooking skills can match up to my eating skills.</li>
                             </ul>
                         </div>
@@ -39,7 +39,7 @@ export default function About() {
                     
                     <div className="space-y-8">
                         <div className="flex justify-center">
-                            <img src="/about.png" alt="Fred's photo" className="w-full max-w-md h-auto shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                            <img src="/image.png" alt="Fred's photo" className="w-full max-w-md h-auto shadow-lg hover:shadow-xl transition-shadow duration-300" />
                         </div>
                     </div>
                 </div>
