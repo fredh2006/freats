@@ -1,4 +1,4 @@
-# freats - Food Blog Source Code
+# freats
 
 Visit the live blog: **[freats.ca](https://freats.ca)**
 
