@@ -53,7 +53,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-6 md:gap-8 lg:gap-12">
           <div>
             <div className={`${quicksand.className} text-[10px] sm:text-sm text-gray-600 mb-1`}>
-              March 22, 2024 • 3-minute read
+              July 2, 2025 • 4-minute read
             </div>
             <img 
               src="/r-d.jpg" 
