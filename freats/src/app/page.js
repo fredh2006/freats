@@ -37,11 +37,11 @@ export default function Home() {
               <Button />
             </div>
           </div>
+          <Link href="/posts/6865e079936e0ebb5a20dd4f" className="shadow-sm min-h-[180px] sm:min-h-[300px] md:min-h-[400px] lg:min-h-[500px] bg-[url(/r-d.jpg)] bg-cover relative overflow-hidden bg-center">
+            <div className={`${noto_serif.className} text-sm sm:text-lg md:text-xl lg:text-2xl w-full sm:w-3/4 font-bold p-1.5 sm:p-3 absolute bottom-0 left-0 bg-white`}>Review: R&D</div>
+          </Link>
           <Link href="posts/6701ba7dc021bc454142a088" className="shadow-sm min-h-[180px] sm:min-h-[300px] md:min-h-[400px] lg:min-h-[500px] bg-[url(/uoft.png)] bg-cover relative overflow-hidden bg-center">
             <div href="/posts" className={`${noto_serif.className} text-sm sm:text-lg md:text-xl lg:text-2xl w-full sm:w-3/4 font-bold p-1.5 sm:p-3 absolute bottom-0 left-0 bg-white`}>Dishes that Remind me of Home</div>
-          </Link>
-          <Link href="/posts/66ad7fe0de845afb0cef7f9a" className="shadow-sm min-h-[180px] sm:min-h-[300px] md:min-h-[400px] lg:min-h-[500px] bg-[url(/japan.png)] bg-cover relative overflow-hidden bg-center">
-            <div className={`${noto_serif.className} text-sm sm:text-lg md:text-xl lg:text-2xl w-full sm:w-3/4 font-bold p-1.5 sm:p-3 absolute bottom-0 left-0 bg-white`}>Review: Japan</div>
           </Link>
         </div>
       </div>
@@ -56,7 +56,7 @@ export default function Home() {
               March 22, 2024 • 3-minute read
             </div>
             <img 
-              src="/uoft.png" 
+              src="/r-d.jpg" 
               alt="Featured article image" 
               className="w-full h-[150px] sm:h-[300px] md:h-[350px] lg:h-[400px] object-cover rounded-lg shadow-lg hover:shadow-xl transition-all duration-300" 
             />
@@ -64,10 +64,10 @@ export default function Home() {
           
           <div className={`${quicksand.className} mt-0 md:mt-5 `}>
             <h2 className={`${noto_serif.className} text-xl sm:text-2xl md:text-3xl font-bold mb-1.5 sm:mb-4 md:mb-6 text-gray-800`}>
-              Dishes that Remind me of Home
+              Review: R&D
             </h2>
             <div className="mb-2 sm:mb-6 md:mb-8 text-sm sm:text-lg md:text-md lg:text-md leading-relaxed">
-              Wow. It feels like I haven&apos;t written an article in the longest time, which is partially true. Ever since I got back from my East-Asian country crawl (only 2 countries lol!), I went to explore the stunning scenery of Banff and pack my bags for university. As a freshman in university, the transition from high school to university isn&apos;t simple at all. There&apos;s such a drastic difference whether it&apos;d be socially or academically, but I&apos;ve begun to ease into a routine I enjoy. Although I go to university close to home and have the blessing of going back every week, I still feel homesick and crave the warmth of the dinner table at home. For any university student reading and experiencing this, I&apos;ve found that one of the best things you can do is eat food that reminds you of home. I&apos;m here today to share some of my favourite dishes.
+              Remember when I said in the last article that I haven&apos;t written in a lost time? Well, it&apos;s ok if you don&apos;t, because I had to go back and check. This time, I seriously haven&apos;t posted in eons, but with finishing my first year of university and starting my first real job, I think I&apos;ll give myself some leeway. It&apos;s been a couple months into summer now, so I think I&apos;ll return from my absence and hopefully (cross your fingers), stay for a bit. I have lots of restaurants and topics I want to explore this summer so you should be seeing lots of FREATS articles!  For this article, I went to R&D, a restaurant opened up by Eric Chong (who my girlfriend thinks I look like), the winner of the first MasterChef Canada.
             </div>
             <Button></Button>
           </div>
